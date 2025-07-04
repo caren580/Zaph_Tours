@@ -22,7 +22,6 @@ function Destinations() {
         Explore Our Destinations
       </Typography>
 
-      {/* Intro Section */}
       <Paper sx={{ p: 5, backgroundColor: "#f5f0ff" }} variant="outlined">
         <Typography
           variant="h5"
@@ -47,7 +46,6 @@ function Destinations() {
         </Box>
       </Paper>
 
-      {/* Destinations Cards */}
       <Box
         sx={{
           display: "flex",
@@ -58,7 +56,14 @@ function Destinations() {
         }}
       >
         {destinations.map((dest, index) => (
-          <Card key={index} sx={{ width: 300, boxShadow: 4 }}>
+          <Card key={index} sx={{
+             width: 300,
+              boxShadow: 4,
+              transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                "&:hover": {
+                  transform: "scale(1.03)",
+                  boxShadow: "0 8px 20px rgba(0,0,0,0.2)",
+                }, }}>
             <CardMedia
               component="img"
               height="180"

@@ -31,7 +31,6 @@ function TripTypes() {
   return (
     <Box sx={{ minHeight: "100vh", backgroundColor: "#f4f6f8", paddingTop: "64px" }}>
       
-      {/* Hero Section */}
       <Paper
         sx={{
           backgroundColor: "#090040",
@@ -45,12 +44,11 @@ function TripTypes() {
             Discover Your Perfect Trip
           </Typography>
           <Typography variant="h6">
-            From romantic getaways to thrilling adventures — find your ideal escape
+            From romantic getaways to thrilling adventures  find your ideal escape
           </Typography>
         </Container>
       </Paper>
 
-      {/* Trip Cards */}
       <Container maxWidth="lg" sx={{ py: 6 }}>
         <Box
           sx={{
@@ -136,7 +134,7 @@ function TripTypes() {
           ))}
         </Box>
 
-        {/* Pagination */}
+  
         <Box sx={{ display: "flex", justifyContent: "center", mt: 6 }}>
           <Pagination
             count={totalPages}
