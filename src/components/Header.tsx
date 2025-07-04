@@ -11,7 +11,7 @@ import { BsGlobeEuropeAfrica } from "react-icons/bs";
 
 function Header() {
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#090040" }}>
+    <AppBar position="sticky" sx={{ backgroundColor: "#090040" }}>
       <Toolbar>
         <IconButton size="large" edge="start" color="inherit">
           <BsGlobeEuropeAfrica />
