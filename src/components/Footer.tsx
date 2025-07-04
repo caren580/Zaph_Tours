@@ -1,10 +1,12 @@
 import { Box, Container, Typography, Link, IconButton } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { BsGlobeEuropeAfrica } from "react-icons/bs";
+import { IoLocation } from "react-icons/io5";
 function Footer() {
   return (
     <Box sx={{ backgroundColor: "#090040", color: "#fff", py: 4, mt: 6 }}>
@@ -32,10 +34,10 @@ function Footer() {
               Quick Links
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-              <Link href="#" color="inherit" underline="hover">Home</Link>
-              <Link href="#" color="inherit" underline="hover">Destinations</Link>
-              <Link href="#" color="inherit" underline="hover">Trip Types</Link>
-              <Link href="#" color="inherit" underline="hover">Contact Us</Link>
+              <Link component={RouterLink} to="/" color="inherit" underline="hover">Home</Link>
+              <Link  component={RouterLink} to="/destinations" color="inherit" underline="hover">Destinations</Link>
+              <Link component={RouterLink} to="/triptypes"color="inherit" underline="hover">Trip Types</Link>
+              <Link component={RouterLink} to="/contactus"color="inherit" underline="hover">Contact Us</Link>
             </Box>
           </Box>
           <Box>
@@ -46,6 +48,8 @@ function Footer() {
                 <MdEmail /> info@zaphtours.com</Typography>
             <Typography variant="body2" sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                <FaPhoneAlt /> +254 712 345 678</Typography>
+               <Typography variant="body2"  sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                < IoLocation  /> Upperhill, Nairobi, Kenya</Typography>
 
             <Box sx={{ mt: 2, display: "flex", gap: 1 }}>
               <IconButton color="inherit" size="small">
