@@ -22,7 +22,7 @@ function Header() {
 
         {/* NavLinks */}
         <Stack direction="row" spacing={2}>
-          <Button color="inherit"  component={RouterLink} to="/">
+          <Button color="inherit" component={RouterLink} to="/">
             Home
           </Button>
           <Button color="inherit" component={RouterLink} to="/destinations">
@@ -34,7 +34,6 @@ function Header() {
           <Button color="inherit" component={RouterLink} to="/contactus">
             Contact us
           </Button>
-          
         </Stack>
       </Toolbar>
     </AppBar>

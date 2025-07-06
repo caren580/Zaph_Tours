@@ -20,7 +20,12 @@ function ContactPage() {
   return (
     <Box sx={{ py: 8, backgroundColor: "#f5f5f5", minHeight: "100vh" }}>
       <Container maxWidth="md">
-        <Typography variant="h4" align="center" gutterBottom sx={{ color: "#471396", fontWeight: "bold" }}>
+        <Typography
+          variant="h4"
+          align="center"
+          gutterBottom
+          sx={{ color: "#471396", fontWeight: "bold" }}
+        >
           Contact Us
         </Typography>
 
@@ -28,16 +33,26 @@ function ContactPage() {
           We'd love to hear from you! Reach out with any questions or feedback.
         </Typography>
 
-        <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: 4 }}>
-          
-    
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            gap: 4,
+          }}
+        >
           <Paper sx={{ p: 4, flex: 1 }}>
             <Typography variant="h6" gutterBottom sx={{ color: "#090040" }}>
               Send a Message
             </Typography>
             <Box component="form">
               <TextField fullWidth label="Name" margin="normal" required />
-              <TextField fullWidth label="Email" type="email" margin="normal" required />
+              <TextField
+                fullWidth
+                label="Email"
+                type="email"
+                margin="normal"
+                required
+              />
               <TextField fullWidth label="Subject" margin="normal" required />
               <TextField
                 fullWidth
@@ -57,7 +72,6 @@ function ContactPage() {
             </Box>
           </Paper>
 
-
           <Paper sx={{ p: 4, flex: 1, backgroundColor: "#fff" }}>
             <Typography variant="h6" gutterBottom sx={{ color: "#090040" }}>
               Contact Information
@@ -69,12 +83,12 @@ function ContactPage() {
             </Box>
 
             <Box display="flex" alignItems="center" mb={1}>
-              <FaPhoneAlt  />
+              <FaPhoneAlt />
               <Typography>+254 712 345 678</Typography>
             </Box>
 
             <Box display="flex" alignItems="center" mb={3}>
-              <IoLocation  />
+              <IoLocation />
               <Typography>Upperhill, Nairobi, Kenya</Typography>
             </Box>
 
@@ -92,14 +106,21 @@ function ContactPage() {
             </Typography>
 
             <Box display="flex" gap={2}>
-              <Link href="#" color="inherit">< FaFacebook /></Link>
-              <Link href="#" color="inherit"><FaInstagram  /></Link>
-              <Link href="#" color="inherit"><FaSquareXTwitter  /></Link>
-              <Link href="#" color="inherit"><FaLinkedin  /></Link>
+              <Link href="#" color="inherit">
+                <FaFacebook />
+              </Link>
+              <Link href="#" color="inherit">
+                <FaInstagram />
+              </Link>
+              <Link href="#" color="inherit">
+                <FaSquareXTwitter />
+              </Link>
+              <Link href="#" color="inherit">
+                <FaLinkedin />
+              </Link>
             </Box>
           </Paper>
         </Box>
-
 
         <Box sx={{ mt: 6 }}>
           <Paper sx={{ height: 400 }}>

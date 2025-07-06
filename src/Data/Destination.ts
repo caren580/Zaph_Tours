@@ -11,7 +11,8 @@ export const destinations: Destination[] = [
   {
     name: "Mount Kenya",
     image: "/assets/mount-kenya.jpg",
-    description: "From lush forests to glacial peaks, Mount Kenya offers an unforgettable trekking experience.",
+    description:
+      "From lush forests to glacial peaks, Mount Kenya offers an unforgettable trekking experience.",
     link: "#",
     groupPrice: "$1200",
     individualPrice: "$300",
@@ -19,7 +20,8 @@ export const destinations: Destination[] = [
   {
     name: "Lake Nakuru",
     image: "/assets/lake-nakuru.jpg",
-    description: "From rhinos to giraffes, Lake Nakuru National Park offers diverse wildlife sightings and unforgettable safari experiences.",
+    description:
+      "From rhinos to giraffes, Lake Nakuru National Park offers diverse wildlife sightings and unforgettable safari experiences.",
     link: "#",
     groupPrice: "$1000",
     individualPrice: "$250",
@@ -27,7 +29,8 @@ export const destinations: Destination[] = [
   {
     name: "Tsavo National Park",
     image: "/assets/tsavo-park.jpg",
-    description: "Unforgettable wildlife encounters await in Tsavo National Park",
+    description:
+      "Unforgettable wildlife encounters await in Tsavo National Park",
     link: "#",
     groupPrice: "$1400",
     individualPrice: "$350",
@@ -43,7 +46,8 @@ export const destinations: Destination[] = [
   {
     name: "Mt. Ruwenzori",
     image: "/assets/mount-ruwenzori.jpg",
-    description: "Discover the wonders of the Ruwenzori, from lush forests to glacial valleys.",
+    description:
+      "Discover the wonders of the Ruwenzori, from lush forests to glacial valleys.",
     link: "#",
     groupPrice: "$1600",
     individualPrice: "$400",

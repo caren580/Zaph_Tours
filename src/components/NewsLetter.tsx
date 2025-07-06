@@ -40,7 +40,11 @@ function Newsletter() {
             onChange={(e) => setEmail(e.target.value)}
             fullWidth
           />
-          <Button type="submit" variant="contained" sx={{ px: 4,backgroundColor:"#FFCC00", color:"white" }}>
+          <Button
+            type="submit"
+            variant="contained"
+            sx={{ px: 4, backgroundColor: "#FFCC00", color: "white" }}
+          >
             Subscribe
           </Button>
         </Box>

@@ -19,18 +19,26 @@ function TripTypes() {
   const totalPages = Math.ceil(tripPackages.length / cardsPerPage);
 
   const startIndex = (currentPage - 1) * cardsPerPage;
-  const currentTrips = tripPackages.slice(startIndex, startIndex + cardsPerPage);
+  const currentTrips = tripPackages.slice(
+    startIndex,
+    startIndex + cardsPerPage,
+  );
 
   const handlePageChange = (
     _event: React.ChangeEvent<unknown>,
-    value: number
+    value: number,
   ) => {
     setCurrentPage(value);
   };
 
   return (
-    <Box sx={{ minHeight: "100vh", backgroundColor: "#f4f6f8", paddingTop: "64px" }}>
-      
+    <Box
+      sx={{
+        minHeight: "100vh",
+        backgroundColor: "#f4f6f8",
+        paddingTop: "64px",
+      }}
+    >
       <Paper
         sx={{
           backgroundColor: "#090040",
@@ -44,7 +52,8 @@ function TripTypes() {
             Discover Your Perfect Trip
           </Typography>
           <Typography variant="h6">
-            From romantic getaways to thrilling adventures  find your ideal escape
+            From romantic getaways to thrilling adventures find your ideal
+            escape
           </Typography>
         </Container>
       </Paper>
@@ -88,7 +97,11 @@ function TripTypes() {
                   {trip.title}
                 </Typography>
 
-                <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ mb: 2 }}
+                >
                   {trip.description}
                 </Typography>
 
@@ -134,7 +147,6 @@ function TripTypes() {
           ))}
         </Box>
 
-  
         <Box sx={{ display: "flex", justifyContent: "center", mt: 6 }}>
           <Pagination
             count={totalPages}

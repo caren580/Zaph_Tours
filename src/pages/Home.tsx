@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import HeroSection from '../components/Herosection';
+import HeroSection from "../components/Herosection";
 import About from "../components/About";
 import FeaturedDestinations from "../components/FeaturedDestinations";
 import Testimonials from "../components/Testimonials";
