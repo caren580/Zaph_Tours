@@ -13,7 +13,6 @@ export const tripPackages: TripPackage[] = [
     description:
       "Romantic getaways to breathtaking destinations with customized experiences for couples.",
     price: "$1500",
-    offer: "10% off for bookings before August",
   },
   {
     title: "Family",
@@ -56,7 +55,6 @@ export const tripPackages: TripPackage[] = [
     description:
       "Top-tier accommodations, gourmet meals, and VIP travel for ultimate comfort.",
     price: "$2500",
-    offer: "Free spa treatment included",
   },
   {
     title: "Beach Holidays",

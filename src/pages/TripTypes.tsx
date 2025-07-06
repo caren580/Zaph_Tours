@@ -114,17 +114,6 @@ function TripTypes() {
                       fontWeight: "bold",
                     }}
                   />
-                  {trip.offer && (
-                    <Chip
-                      label={trip.offer}
-                      sx={{
-                        ml: 2,
-                        backgroundColor: "#FFCC00",
-                        color: "#090040",
-                        fontWeight: "bold",
-                      }}
-                    />
-                  )}
                 </Box>
 
                 <Button
